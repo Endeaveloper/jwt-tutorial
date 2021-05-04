@@ -19,6 +19,6 @@ public class GEPS_Raid_Config {
     DB, APP (Raid 5)
     |   disk1   |   disk2   |   disk3   |   disk4   |
         1.2T        1.2T        1.2T        1.2T*/
-    
+
 
 }
