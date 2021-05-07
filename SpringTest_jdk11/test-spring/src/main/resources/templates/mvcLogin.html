@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>mvcLogin</title>
+    <meta http-equiv="Content-Type" content="text/htmll; charset=UTF-8"/>
+</head>
+<body>
+<p th:text="'안녕하세요. mvcLoginPage'"> mvcLoginPage</p>
+<br>
+<p th:text="'안녕하세요.' + ${data}"> 안녕하세요. 손님</p>
+<br>
+<form
+        method="post"
+        action="/mvcLogin.do"
+>
+    <!-- 가상 URL 맵핑 해주어야 합니다. -->
+    아이디 <input name="id"/>
+    <br/>
+    비밀번호 <input type="password" name="pass">
+    <br/>
+    <input type="submit" value="로그인">
+</form>
+<!-- 로그인 실패시 메세지 -->
+<!-- param.변수 => request.getParameter("변수") -->
+<span style="color: red;">${param.message}</span>
+
+
+</body>
+</html>
